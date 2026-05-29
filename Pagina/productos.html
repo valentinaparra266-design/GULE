@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stiliy.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">gule</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="imagenes/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../servicios.html">Servicios</a></li>
+                    <li><a href="../productos.html">Productos</a></li>
+                    <li><a href="./ingreso.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <a href="index_car.html">
+                            
+                    <img src="imagenes/car.svg" id="img-carrito" alt="carrito">
+                    </a>
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Haz click y compra aqui</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            
+                        </div>
+                    </li>
+                </ul>
+                </div>
+
+    </header>
+</body>
+<!-- Bootstrap CSS (VA EN HEAD) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- CARRUSEL -->
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item active" data-bs-interval="10000">
+            <img src="https://blogs.unitec.mx/hubfs/Imported_Blog_Media/estaciones-de-trabajo-cocina-profesional-2-Dec-17-2022-07-23-41-8269-PM.jpg"
+                 class="d-block w-100" alt="">
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://www.findusfoodservices.es/media/Articulo-9_FindusFoodServices-1.png"
+                 class="d-block w-100" alt="">
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://enlacocinamagazine.b-cdn.net/wp-content/uploads/2017/12/horas-extra-3.jpg"
+                 class="d-block w-100" alt="">
+        </div>
+
+</div>
+
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+
+<!-- Bootstrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<div>
+<section class="info">
+
+        <img class="bg-2" src="imagenes/bg-2.png" alt="">
+        <div class="info-content container">
+
+            <div class="info-img">
+                <img src="imagenes/breakfast.png" alt="">
+            </div>
+
+            <div class="info-txt">
+                <h2>La mejor calidad de los Productos</h2>
+                <p>
+                    Creemos que una buena experiencia comienza con ingredientes de calidad. Por eso, elegimos cada
+                    producto con atención al detalle, buscando siempre frescura, sabor y autenticidad. Nuestro objetivo
+                    es brindarte platos que no solo alimenten, sino que también generen momentos memorables, cuidando
+                    cada proceso desde la cocina hasta tu mesa.
+                </p>
+                <a href="../index.html" class="btn-1">Informacion</a>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <main class="products container">
+
+        <h2>Productos</h2>
+
+        <div class="box-container" id="lista-1">
+
+            <div class="box">
+                <img src="imagenes/pla1.png" alt="">
+                <div class="product-txt">
+                    <h3>Paella de Mariscos</h3>
+                    <p>Arroz cocido a la perfección con una selección de mariscos frescos, especias aromáticas y un
+                        toque cítrico.</p>
+                    <p class="precio">$23.500</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="imagenes/pla2.png" alt="">
+                <div class="product-txt">
+                    <h3>Huevos Gourmet</h3>
+                    <p>Huevos preparados con técnica gourmet, acompañados de vegetales y una suave salsa especial.</p>
+                    <p class="precio">$16.000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="imagenes/pla3.png" alt="">
+                <div class="product-txt">
+                    <h3>Degustación Dulce y Crujiente</h3>
+                    <p>Selección de frutos secos y bocados dulces, ideal como entrada ligera o snack</p>
+                    <p class="precio">$15.200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="imagenes/pla4.png" alt="">
+                <div class="product-txt">
+                    <h3>Filete de Res a la Parrilla</h3>
+                    <p>Jugoso corte de res a la parrilla con guarnición de vegetales y reducción especial.</p>
+                    <p class="precio">$19.000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="imagenes/pla5.png" alt="">
+                <div class="product-txt">
+                    <h3>Salmón Fresco</h3>
+                    <p>Salmón acompañado de hojas verdes frescas y aderezo cítrico ligero.</p>
+                    <p class="precio">$21.000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="imagenes/pla6.png" alt="">
+                <div class="product-txt">
+                    <h3>Pasta Clásica Italiana</h3>
+                    <p>Pasta al dente con salsa de tomate natural, albahaca y aceite de oliva.</p>
+                    <p class="precio">$20.000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="imagenes/pla7.png" alt="">
+                <div class="product-txt">
+                    <h3>Salmón a la Plancha</h3>
+                    <p>Filete de salmón a la plancha con vegetales frescos y presentación vibrante.</p>
+                    <p class="precio">$18.000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="imagenes/pla8.png" alt="">
+                <div class="product-txt">
+                    <h3>Ensalada de Frutas </h3>
+                    <p>Combinación refrescante de frutas frescas seleccionadas del día.</p>
+                    <p class="precio">$16.000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="imagenes/pla9.png" alt="">
+                <div class="product-txt">
+                    <h3>Desayuno Especial</h3>
+                    <p>Variedad de huevos, pan artesanal y frutas frescas.</p>
+                    <p class="precio">$26.500</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="9">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="imagenes/pla10.png" alt="">
+                <div class="product-txt">
+                    <h3>Ensalada Mixta</h3>
+                    <p>Mezcla de vegetales frescos con proteína y aderezo suave.</p>
+                    <p class="precio">$16.300</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="10">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="imagenes/pla11.png" alt="">
+                <div class="product-txt">
+                    <h3>Pollo al Curry con Arroz</h3>
+                    <p>Pollo en salsa curry cremosa servido con arroz esponjoso.</p>
+                    <p class="precio">$15.500</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="11">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="imagenes/pla12.png" alt="">
+                <div class="product-txt">
+                    <h3>Selección de Sushi</h3>
+                    <p>Variedad de sushi fresco con ingredientes de alta calidad.</p>
+                    <p class="precio">$29.500</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="12">Agregar al carrito</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="btn-2" id="load-more">Cargar Mas</div>
+    </main>
+
+    <section class="app container">
+
+        <div class="app-txt">
+
+            <h2>Descarga nuestra app descubre ofertas</h2>
+            <p>
+                Con nuestra app, pedir tu comida favorita nunca fue tan fácil. Accede a ofertas exclusivas, realiza
+                pedidos en segundos y recibe tus platillos con la mejor calidad. Vive una experiencia rápida, práctica y
+                pensada para ti, directamente desde tu dispositivo móvil.
+            </p>
+            <div class="descarga">
+                <img src="imagenes/store1.png" alt="">
+                <img src="imagenes/store2.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="app-img">
+            <img src="imagenes/app.png" alt="">
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="footer-content container">
+
+            <div class="link">
+                <h3>
+                <p>© 2026- Todos los derechos reservados @valentina parra</p>
+                </h3>
+            </div>
+
+            <div class="link">
+                <h3>Descarga</h3>
+                <div class="descarga">
+                    <img src="imagenes/store1.png" alt="">
+                    <img src="imagenes/store2.png" alt="">
+                </div>
+
+            </div>
+            
+
+
+
+
+        </div>
+
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+    <script src="script.js"></script>
+</body>
+
+</html>

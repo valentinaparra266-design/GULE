@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #f4f4f4;
+    padding: 40px;
+}
+
+.contenedor{
+    max-width: 1000px;
+    background: white;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+}
+.logo{
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.logo img{
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.logo img:hover{
+    transform: scale(1.05);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.cliente{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.cliente label{
+    font-weight: bold;
+    color: #444;
+}
+
+.cliente input{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table th{
+    background: #ff900f;
+    color: white;
+    padding: 15px;
+}
+
+table td{
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+select,
+input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+select:focus,
+input:focus{
+    border-color: #ff900f;
+}
+
+.totales{
+    width: 300px;
+    margin-left: auto;
+}
+
+.totales label{
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.totales input{
+    margin-top: 5px;
+}
+
+button{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #ff900f;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 30px;
+}
+
+button:hover{
+    transform: scale(1.02);
+    background: #ff900f;
+}
+
+@media(max-width:768px){
+
+    .cliente{
+        grid-template-columns: 1fr;
+    }
+
+    table{
+        display: block;
+        overflow-x: auto;
+    }
+
+    .totales{
+        width: 100%;
+    }
+}
+.adicionales{
+    margin: 30px 0;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.adicionales h3{
+    margin-bottom: 15px;
+}
+
+.adicionales label{
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.adicionales input{
+    width: auto;
+    margin-right: 10px;
+}
+.adicionales, .pago{
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.adicionales label,
+.pago label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.adicionales img,
+.pago img{
+    border-radius: 5px;
+}
